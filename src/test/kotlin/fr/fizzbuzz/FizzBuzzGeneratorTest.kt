@@ -15,5 +15,10 @@ class FizzBuzzGeneratorTest {
   fun `should generate suite of 1 to 4`() {
     assertThat(generator.generate(4)).isEqualToIgnoringCase("1 2 Fizz 4")
   }
+
+  @Test
+  fun `should generate suite of 1 to 20`() {
+    assertThat(generator.generate(20)).isEqualTo("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz");
+  }
 }
 
