@@ -7,4 +7,6 @@ class Number(val value: Int = 0) {
       else -> false
     }
   }
+
+  fun isMultipleOfFive(): Boolean = false
 }
