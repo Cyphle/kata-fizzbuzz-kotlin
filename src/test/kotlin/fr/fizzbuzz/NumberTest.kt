@@ -15,4 +15,10 @@ class NumberTest {
     val number = Number(3)
     assertThat(number.isMultipleOfThree()).isTrue();
   }
+
+  @Test
+  fun `should return false if number is not a multiple of 3 and tested against a multiple of 3`() {
+    val number = Number(4)
+    assertThat(number.isMultipleOfThree()).isFalse();
+  }
 }
