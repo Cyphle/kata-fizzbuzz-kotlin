@@ -33,4 +33,10 @@ class NumberTest {
     val number = Number(4)
     assertThat(number.isMultipleOfFive()).isFalse()
   }
+
+  @Test
+  fun `should return true if multiple of 5`() {
+    val number = Number(15)
+    assertThat(number.isMultipleOfFive()).isTrue()
+  }
 }

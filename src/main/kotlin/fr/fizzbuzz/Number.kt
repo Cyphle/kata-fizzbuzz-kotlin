@@ -8,5 +8,5 @@ class Number(val value: Int = 0) {
     }
   }
 
-  fun isMultipleOfFive(): Boolean = false
+  fun isMultipleOfFive(): Boolean = value != 0 && value%5 == 0
 }
